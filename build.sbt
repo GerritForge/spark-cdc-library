@@ -1,5 +1,7 @@
 name := "spark-cdc"
 
+
+
 version := "1.0"
 
 organization := "com.gerritforge"
