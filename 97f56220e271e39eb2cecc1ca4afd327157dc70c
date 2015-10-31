@@ -1,0 +1,8 @@
+Code-Review+2: Stefano Galarraga <galarragas@gmail.com>
+Integrated+1: Stefano Galarraga <galarragas@gmail.com>
+Verified+1: <gerritforgebuild@gerritforge.com>
+Submitted-by: Stefano Galarraga <galarragas@gmail.com>
+Submitted-at: Sat, 31 Oct 2015 18:09:38 +0000
+Reviewed-on: http://juc-gerrit.gerritforge.com/33
+Project: GerritForge/spark-cdc-library
+Branch: refs/heads/master
