@@ -1,7 +1,7 @@
 package com.gerritforge.experiments.bigdata.spark.cdc
 
 import org.apache.spark.rdd.RDD
-import org.apache.spark.storage.StorageLevel.MEMORY_AND_DISK_SER
+import org.apache.spark.storage.StorageLevel._
 import scala.reflect.ClassTag
 
 trait CdcSupport {
@@ -23,7 +23,7 @@ trait CdcSupport {
       previousSnapshot
         .filter( _ != null)
         .keyBy( keyExtractor )
-        .persist(MEMORY_AND_DISK_SER)
+        .persist(MEMORY_ONLY_SER)
 
     val deletedRecords = extractDeletedRecords(newByKey, previousByKey)
 
