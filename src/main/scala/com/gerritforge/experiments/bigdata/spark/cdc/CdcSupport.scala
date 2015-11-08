@@ -18,13 +18,13 @@ trait CdcSupport {
       newSnapshot
         .filter( _ != null)
         .keyBy( keyExtractor )
-        .persist(MEMORY_ONLY_SER)
+        .persist(MEMORY_AND_DISK)
 
     val previousByKey =
       previousSnapshot
         .filter( _ != null)
         .keyBy( keyExtractor )
-        .persist(MEMORY_ONLY_SER)
+        .persist(MEMORY_AND_DISK)
 
     val deletedRecords = extractDeletedRecords(newByKey, previousByKey)
 
